@@ -45,6 +45,9 @@ This project is a set of Selenium-based automation scripts designed to interact 
       PASSWORD=example
      ```
 
+5. Set up products:
+   - Update `wts.json` and  `syndicate_mods.json` with all products you want to sell
+
 ## Usage
 
 ### 1. **Automated Product Posting**
@@ -54,4 +57,22 @@ This script logs into your Warframe Market account, fetches the market prices fo
 Run the script with the following command:
 
 ```bash
-node postProducts.js
+node place_new_order.js
+```
+
+### 2. **Automated Clean Products Posted**
+
+This script logs into your Warframe Market account, and cleans all producs you are selling and save on a backup file
+
+```bash
+node clean_user_sales.js
+```
+
+
+### 2. **Automated Fetch Products Prices (Required)**
+
+Fetch prices of all products you want to sell and save on cache
+
+```bash
+node fetch_items.js
+```
