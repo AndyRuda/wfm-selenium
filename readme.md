@@ -39,17 +39,10 @@ This project is a set of Selenium-based automation scripts designed to interact 
    - Add the `chromedriver` binary to your system's `PATH` or place it in the project directory.
 
 4. Set up your credentials:
-   - Create a `utils/const.js` file with the following structure:
-     ```js
-     module.exports = {
-        auth: {
-            username: 'your_username',
-            password: 'your_password'
-        },
-        params: {
-            syndicateSells: ['product_1', 'product_2', 'product_3']  // List your product names here
-        }
-     }
+   - Create a `.env` file with the following structure:
+     ```
+      USERNAME=example@example.com
+      PASSWORD=example
      ```
 
 ## Usage
